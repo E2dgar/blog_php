@@ -4,8 +4,9 @@
 
 ### Objectif : utiliser l'inclusion
 
-TODO
+TODO :
 Créer un header avec un menu.
+
 Le menu a 3 entrées: Home - Articles - Connexion
 
 Inclure le header dans index.php en utilisant l'inclusion de pages.
