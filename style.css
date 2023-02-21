@@ -1,0 +1,32 @@
+/** VAR **/
+:root {
+  --primary : hsl(240, 78%, 68%);
+  --white: #FFF;
+  --black: #202020;
+
+  /** Font-size **/
+  --title: 2rem;
+  --L : 1.5rem;
+  --labor: 1rem;
+}
+
+header {
+  background-color:var(--primary);
+  max-width: 100%;
+  padding: 1rem;
+  font-size: var(--L);
+}
+
+header ul  {
+  max-width: 1400px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--white);
+}
