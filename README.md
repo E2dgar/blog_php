@@ -1,12 +1,18 @@
 # Création d'un blog en PHP
 
-## Etape 1
+## Etape 2
 
-### Objectif : utiliser l'inclusion
+### Objectif : communiquer avec une base de données en utilisant PDO
 
 TODO :
-Créer un header avec un menu.
+Récupérer les articles de la base et les afficher dans la page articles.php
 
-Le menu a 3 entrées: Home - Articles - Connexion
+Vous afficherez les articles sous forme de card composée de :
 
-Inclure le header dans index.php en utilisant l'inclusion de pages.
+-l'image
+
+-le titre
+
+-les 6 premiers mots du contenu
+
+-un lien 'Détails' (pas de href pour l'instant)
