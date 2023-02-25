@@ -11,7 +11,7 @@ Vous afficherez les articles sous forme de card composée de :
 
 -l'image
 
--le titre
+-le titre (ma première lettre sera en majuscule)
 
 -les 6 premiers mots du contenu
 
