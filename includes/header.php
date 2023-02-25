@@ -1,3 +1,25 @@
+<?php
+function menuItem(string $lien, string $item): string {
+  $className = 'item';
+  //Logique de définition de la classe
+  if($_SERVER['SCRIPT_NAME'] === $lien) {
+    $className .= ' active';
+  }
+
+  //On retourne notre élément HTML avec les différentes valeurs
+  return '<li class="' . $className . '">
+            <a href="' . $lien . '">' . $item . '</a>
+          </li>';
+
+  //Il existe une autre syntaxe qui permet une meilleure lisiblité du code dans le cas présent
+  /*return <<<HTML
+    <li class="$className">
+      <a href="$lien">$item</a>
+    </li>
+HTML;*/
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -22,9 +44,8 @@
 <header>
   <nav>
     <ul class="menu">
-      <!-- Utilisation de la super variable $_SERVER -->
-      <li class="<?php if($_SERVER['SCRIPT_NAME'] === '/blog_php/index.php') { echo 'active';}?>"><a href="index.php">Home</a></li>
-      <li class= "<?php if($_SERVER['SCRIPT_NAME'] == '/blog_php/articles.php') { echo 'active';}?>"><a href="articles.php">Articles</a></li>
+      <?= menuItem('/blog_php/index.php', 'Home'); ?>
+      <?= menuItem('/blog_php/articles.php', 'Articles'); ?>
       <li><a href="#">Connexion</a></li>
     </ul>
   </nav>
