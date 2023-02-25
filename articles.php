@@ -2,6 +2,6 @@
 $title = "Articles";
 require_once 'includes/header.php'; ?>
 
-</body>
-
+    </main>
+  </body>
 </html>

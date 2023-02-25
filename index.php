@@ -7,6 +7,6 @@ echo'<pre>';
 echo'</pre>';
 ?>
 
-</body>
-
+    </main>
+  </body>
 </html>
