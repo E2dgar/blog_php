@@ -34,3 +34,8 @@ header ul a {
 .active a {
   color: var(--black);
 }
+
+h1 {
+  max-width: max-content;
+  margin: 2rem auto;
+}
