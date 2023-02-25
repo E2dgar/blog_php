@@ -1,8 +1,10 @@
 /** VAR **/
 :root {
   --primary : hsl(240, 78%, 68%);
-  --white: #FFF;
-  --black: #202020;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 13%);
+  --black-light: hsl(0, 0%, 60%);
+  --grey: hsl(0, 0%, 95%);
 
   /** Font-size **/
   --title: 2rem;
@@ -33,4 +35,46 @@ header ul a {
 
 .active a {
   color: var(--black);
+}
+
+
+/** Page Article **/
+.articles-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+list-style: none;
+}
+
+.articles-list li {
+max-width: 247px;
+background-color: var(--grey);
+border-radius: 8px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+padding-bottom: 1rem;
+box-shadow: 1px 1px 5px  var(--black-light);
+}
+
+.articles-list li h2,
+.articles-list li p,
+.articles-list li a {
+padding: .875rem;
+}
+
+.articles-list li p {
+margin-top: auto;
+}
+
+.articles-list li a {
+max-width: max-content;
+padding: 8px;
+text-decoration: none;
+margin: auto 8px 0 auto;
+background-color: var(--primary);
+border-radius: 8px;
+color: var(--white);
+font-weight: bold;
 }
