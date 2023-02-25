@@ -37,6 +37,10 @@ header ul a {
   color: var(--black);
 }
 
+h1 {
+  max-width: max-content;
+  margin: 2rem auto;
+}
 
 /** Page Article **/
 .articles-list {
