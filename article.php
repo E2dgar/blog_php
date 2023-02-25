@@ -38,5 +38,9 @@ HTML;
   }
 
   require_once 'includes/header.php';
-  echo $postContent;
+  echo $postContent; ?>
+
+    </main>
+  </body>
+</html>
  
