@@ -1,18 +1,9 @@
 # Création d'un blog en PHP
 
-## Etape 2
+## Etape 3
 
-### Objectif : communiquer avec une base de données en utilisant PDO
+### Objectif : définir les liens 'Détails' pour chaque article
 
 TODO :
-Récupérer les articles de la base et les afficher dans la page articles.php
-
-Vous afficherez les articles sous forme de card composée de :
-
--l'image
-
--le titre (la première lettre sera en majuscule)
-
--les 6 premiers mots du contenu
-
--un lien 'Détails' (pas de href pour l'instant)
+Définissez les liens pour chaque article.
+Le lien enverra sur la page article.php et affichera le détail de l'article
