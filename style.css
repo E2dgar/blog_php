@@ -82,3 +82,10 @@ border-radius: 8px;
 color: var(--white);
 font-weight: bold;
 }
+
+
+/* Page article Single */
+.article-content {
+  margin: 0 auto;
+  max-width: 50ch;
+}

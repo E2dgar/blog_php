@@ -32,7 +32,7 @@
             <img src="<?= $imageLink ?>" alt="Illustration image"/>
             <h2><?= ucfirst($title) ?></h2>
             <p><?= getExcerpt($content) ?></p>
-            <a href="#">Détails</a>
+            <a href="article.php?id=<?= $articleId ?>">Détails</a>
           </li>
 
           
