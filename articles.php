@@ -22,7 +22,7 @@
   ?>
     <main>
       <?php if(isUserConnected()) { ?>
-          <a class="create-post" href="#">Créer un nouvel article</a>
+          <a class="create-post" href="create.php">Créer un nouvel article</a>
       <?php } ?>
 
       <ul class="articles-list">
@@ -42,8 +42,8 @@
             <?php if(isUserConnected()) { ?>
               <nav class="admin-nav">
                 <ul>
-                  <li><a class="edit-link" href="#">Editer</a></li>
-                  <li><a class="delete-link" href="#">Supprimer</a></li>
+                  <li><a class="edit-link" href="edit.php?id=<?= $articleId ?>">Editer</a></li>
+                  <li><a class="delete-link" href="delete.php?id=<?= $articleId ?>">Supprimer</a></li>
                   <li><a class="more" href="article.php?id=<?= $articleId ?>">Détails</a></li>
                 </ul>
               </nav>

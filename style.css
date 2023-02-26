@@ -141,3 +141,12 @@ input[type="submit"] {
   margin: 2rem auto;
   text-decoration: none;
 }
+
+/** Edit page **/
+form.edit-form {
+  padding-top: 3rem;
+}
+
+form.edit-form input {
+  margin-bottom: 2rem;
+}
