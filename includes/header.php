@@ -1,4 +1,7 @@
 <?php
+
+require_once('includes/functions/auth.php');
+
 function menuItem(string $lien, string $item): string {
   $className = 'item';
   //Logique de définition de la classe
@@ -46,7 +49,11 @@ HTML;*/
     <ul class="menu">
       <?= menuItem('/blog_php/index.php', 'Home'); ?>
       <?= menuItem('/blog_php/articles.php', 'Articles'); ?>
-      <li><a href="#">Connexion</a></li>
+      <?php if(!isUserConnected()) {
+              echo menuItem('/blog_php/login.php', 'Connexion');
+            } else {
+              echo menuItem('/blog_php/logout.php', 'Déconnexion');
+            }?>
     </ul>
   </nav>
 </header>

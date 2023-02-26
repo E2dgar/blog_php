@@ -5,6 +5,8 @@
   --black: hsl(0, 0%, 13%);
   --black-light: hsl(0, 0%, 60%);
   --grey: hsl(0, 0%, 95%);
+  --green: hsl(130, 51%, 49%);
+  --red: hsl(0, 64%, 40%);
 
   /** Font-size **/
   --title: 2rem;
@@ -51,7 +53,7 @@ gap: 2rem;
 list-style: none;
 }
 
-.articles-list li {
+.articles-list li.article {
 max-width: 247px;
 background-color: var(--grey);
 border-radius: 8px;
@@ -83,9 +85,59 @@ color: var(--white);
 font-weight: bold;
 }
 
+/**Ajout quand connecté **/
+.articles-list li .edit-link {
+ background-color: var(--green);
+}
+
+.articles-list li .delete-link {
+  background-color: var(--red);
+}
+
+.article li {
+  list-style: none;
+}
+
+.admin-nav ul {
+  max-width: max-content;
+  margin: 2rem auto;
+  padding: 0;
+  display: flex;
+}
 
 /* Page article Single */
 .article-content {
   margin: 0 auto;
   max-width: 50ch;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.error {
+  max-width: max-content;
+  margin: 1rem auto;
+  padding: 8px;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.create-post {
+  display: block;
+  max-width: max-content;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  margin: 2rem auto;
+  text-decoration: none;
 }

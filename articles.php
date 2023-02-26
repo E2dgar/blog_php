@@ -1,7 +1,9 @@
 <?php 
+  require_once 'includes/functions/auth.php';
   $title = "Articles";
   require_once 'includes/header.php'; 
   require_once 'includes/functions/excerpt.php';
+  
 
   try {
     $db = new PDO(
@@ -19,6 +21,10 @@
 
   ?>
     <main>
+      <?php if(isUserConnected()) { ?>
+          <a class="create-post" href="#">Créer un nouvel article</a>
+      <?php } ?>
+
       <ul class="articles-list">
       <?php
         foreach($articles as $article) { 
@@ -32,7 +38,21 @@
             <img src="<?= $imageLink ?>" alt="Illustration image"/>
             <h2><?= ucfirst($title) ?></h2>
             <p><?= getExcerpt($content) ?></p>
-            <a href="article.php?id=<?= $articleId ?>">Détails</a>
+
+            <?php if(isUserConnected()) { ?>
+              <nav class="admin-nav">
+                <ul>
+                  <li><a class="edit-link" href="#">Editer</a></li>
+                  <li><a class="delete-link" href="#">Supprimer</a></li>
+                  <li><a class="more" href="article.php?id=<?= $articleId ?>">Détails</a></li>
+                </ul>
+              </nav>
+              
+            <?php } else { ?>
+              <a class="more" href="article.php?id=<?= $articleId ?>">Détails</a>
+            <?php } ?>
+
+
           </li>
 
           
