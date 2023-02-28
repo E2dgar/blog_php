@@ -1,0 +1,1 @@
+<p>Un paragraphe qu'on affiche sur toutes les pages</p>
